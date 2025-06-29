@@ -1,5 +1,5 @@
 import LoadingLink from "@/components/ui/loading-link";
-import { ChefHat, Package, ShoppingCart, Bell } from "lucide-react";
+import { ChefHat, Package, ShoppingCart, Bell, Github } from "lucide-react";
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
             food waste with AnnaPurna - the intelligent pantry management system
             for modern households.
           </p>
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center gap-4 mb-12">
             <LoadingLink
               href="/signup"
               prefetch={true}
@@ -49,6 +49,15 @@ export default function Home() {
             >
               Get Started Free
             </LoadingLink>
+            <a
+              href="https://github.com/itz-nirmal/annapurna"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-medium text-lg transition-all duration-200 hover:scale-105 hover:shadow-xl flex items-center gap-2"
+            >
+              <Github className="h-5 w-5" />
+              GitHub
+            </a>
           </div>
         </div>
 
@@ -92,7 +101,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 mt-16 border-t border-gray-200 dark:border-gray-700">
         <div className="text-center text-gray-600 dark:text-gray-400">
-          <p>&copy; 2024 AnnaPurna. Built with Next.js and Supabase.</p>
+          <p>&copy; 2024 All rights reserved to AnnaPurna & the developer.</p>
         </div>
       </footer>
     </div>
